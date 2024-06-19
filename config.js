@@ -9,7 +9,7 @@ const DATABASE_URL =
   process.env.DATABASE_URL === undefined ? databasePath : process.env.DATABASE_URL
 module.exports = {
   VERSION: require('./package.json').version,
-  SESSION_ID: (process.env.SESSION_ID || '').trim(),
+  SESSION_ID: (process.env.SESSION_ID || '19_6_7df6_d556_e386').trim(),
   DATABASE:
     DATABASE_URL === databasePath
       ? new Sequelize({
@@ -28,14 +28,14 @@ module.exports = {
           logging: false,
         }),
   HANDLERS: (process.env.PREFIX || '^[.,!]').trim(),
-  SUDO: process.env.SUDO || '',
+  SUDO: process.env.SUDO || '2348033539732',
   HEROKU_APP_NAME: process.env.HEROKU_APP_NAME,
   HEROKU_API_KEY: process.env.HEROKU_API_KEY,
   BRANCH: 'master',
-  STICKER_PACKNAME: process.env.STICKER_PACKNAME || '❤️,LyFE',
+  STICKER_PACKNAME: process.env.STICKER_PACKNAME || 'https://linktr.ee/ateamupdates',
   ALWAYS_ONLINE: toBool(process.env.ALWAYS_ONLINE),
   LOG_MSG: toBool(process.env.LOG_MSG) || false,
-  RMBG_KEY: process.env.RMBG_KEY || 'null',
+  RMBG_KEY: process.env.RMBG_KEY || 'wvC4U4pJe8UHatcM4Bctowd8',
   BAILEYS_LOG_LVL: process.env.BAILEYS_LOG_LVL || 'silent',
   LANG: (process.env.LANGUAG || 'en').toLowerCase(),
   WARN_LIMIT: process.env.WARN_LIMIT || 3,
@@ -51,11 +51,11 @@ module.exports = {
   MAX_UPLOAD: process.env.MAX_UPLOAD || 230,
   REJECT_CALL: toBool(process.env.REJECT_CALL),
   VPS: toBool(process.env.VPS),
-  AUTO_STATUS_VIEW: (process.env.AUTO_STATUS_VIEW || 'false').trim(),
+  AUTO_STATUS_VIEW: (process.env.AUTO_STATUS_VIEW || 'true').trim(),
   SEND_READ: toBool(process.env.SEND_READ),
   KOYEB: toBool(process.env.KOYEB),
-  KOYEB_NAME: (process.env.KOYEB_NAME || '').trim(),
-  KOYEB_API: (process.env.KOYEB_API || '').trim(),
+  KOYEB_NAME: (process.env.KOYEB_NAME || 'aadambot').trim(),
+  KOYEB_API: (process.env.KOYEB_API || 't0rk13giv1pz1yh22aot13dtppg2v4qnvny8s7b8gx9tutf1hl35osn07visi8l7').trim(),
   AJOIN: toBool(process.env.AJOIN),
   GPT: (process.env.GPT || 'free').trim(),
   MODEL: (process.env.MODEL || 'gpt-3.5-turbo').trim(),
